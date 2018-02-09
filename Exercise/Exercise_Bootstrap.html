@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<title>Test Bootstrap</title>
+	<style>
+	.buttonNumber{
+		background-color: #000000;
+		color: white;
+		outline-style: none;
+		border: 3px solid #cccccc;
+		height: 50px;
+		border-radius: 6px;
+		margin-top: 3px;
+	}
+
+	.buttonDifferent{
+		background-color: #64605F;
+	}
+
+	.heightTop{
+		height: 50;
+	}
+
+	.changeLabel{
+		text-align: right;
+		padding-right: 5px;
+		background-color: #eeeeee;
+
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+	}
+
+	.containerFather{
+		background-color: #cccccc;
+		padding-left: 18px;
+		padding-right: 18px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		border-radius: 5px;
+	}
+
+	button:hover{
+		background-color: brown;
+	}
+
+	button:active{
+		background-color: blue;
+	}
+
+	.containerText{
+    height: 40px;
+    background: #eeeeee;
+    position: relative;
+    border: 3px solid #cccccc;
+	}
+
+</style>
+</head>
+
+
+<body>
+	<div class="row heightTop"></div>
+	<div class="row">
+		<div class="col-md-4 col-xs-8 col-md-offset-4 col-xs-offset-2 containerFather" >
+			<div class="row containerText">
+				<div class="col-md-12 col-xs-12 changeLabel">abc</div>
+			</div>
+			<div class="row">
+				<button class="col-md-3 col-xs-6 buttonNumber">1</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">2</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">3</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">0</button>
+			</div>
+			<div class="row">
+				<button class="col-md-3 col-xs-6 buttonNumber">4</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">5</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">6</button>
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">cl</button>
+			</div>
+			<div class="row">
+				<button class="col-md-3 col-xs-6 buttonNumber">7</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">8</button>
+				<button class="col-md-3 col-xs-6 buttonNumber">9</button>
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">=</button>
+			</div>
+			<div class="row">
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">+</button>
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">-</button>
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">x</button>
+				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">/</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
