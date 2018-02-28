@@ -1,1 +1,36 @@
-Note HTML
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.hometown {
+    background: yellow;
+    color: red;
+}
+
+.abc{
+  color: gray;
+    font-size: 30px;
+}
+p.hometown.abc{
+  color: blue;
+    background-color: green;
+}
+
+p.hometown,.abc{
+  color: pink;
+    background-color: black;
+    font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+<p>My name is Donald.</p>
+<p class="hometown">I live in Ducksburg.</p>
+
+<p class="abc">My name is Dolly.</p>
+<p class="hometown abc">I also live in Ducksburg.</p>
+<p class="hometown abc">456</p>
+
+</body>
+</html>

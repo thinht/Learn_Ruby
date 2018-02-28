@@ -1,1 +1,61 @@
-Note_CSS
+- CSS SYNTAX: + Selector : trỏ đến phần tử muốn tạo kiểu trong HTML
+              + Declaration: có nhiều khối khai báo cách nhau bởi dấu ;. Và được bao quanh bởi cặp dấu {}.
+              + Mỗi Declaration có 1 name và value, cách nhau = dấu :. Và kết thúc = dấu ;.
+
+- CSS Selector: + Dùng để truy vấn đến các thẻ HTML.
+                + CSS sẽ dựa vào các ID và class để truy xuất tới và cách truy xuất đó ta gọi là selector.
+
+- Types CSS:
+
+  * Selector phân cấp: + Phân cấp nghĩa là sẽ dựa vào cấp cha để tìm cấp con.
+                       + dùng khoảng trắng (space) để ngăn cách giữa các thẻ, thẻ nào nằm đầu tiên là thẻ cha, tiếp theo là thẻ con.
+                       VD: div p{
+                          color: red
+                       }
+
+  * ID Selector: + để chọn một phần tử cụ thể, đinh nghĩa Id chỉ có duy nhất trong web, không được định nghĩa trùng tên.
+                 + sử dụng dấu thăng (#) để đại diện cho ID.
+                 + để định nghĩa id cho một element nào cụ thể thì viết element trước dấu (#)
+                 + VD: Đoạn code div#active có nghĩa là tìm thẻ div có id là active.
+
+  * Class Selector: + có thể có 1 hoặc nhiều định nghĩa cho class
+                    + Sử dụng dấu (.) để đại diện cho Class.
+                    + hoặc cũng có thể chỉ định những element cụ thể bị ảnh hưởng vd: thẻ <P> sẽ bị ảnh hưởng bởi css này "p.center"
+                    + ngoài ra chúng ta có thể gọi 2 class 1 lần và cách nhau bởi khoảng trắng như sau: VD: class = "A" và class = "B" thì ta sẽ gọi trong thẻ là class = "A B"
+
+    ==>> +  Với ID thì trong mỗi trang web nó là duy nhất nên thông thường chúng ta hay dùng nó ở những vị trí không có tính chất lặp đi lặp lại
+            nhiều lần
+         +  Với Class thì ta có thể đặt nhiều vị trí, chính vì vậy nếu website bạn có nhiều block giống nhau thì hãy chọn class
+
+         +  dù ID hay class thì đều tuân theo quy luật phâp cấp, nghĩa là khi truy vấn selector thì sẽ ghi cấp cha rồi tới cấp con. Ví dụ giờ viết
+            CSS cho thẻ h2 có class="title" nằm trong thẻ  div có id="main". VD: div#mian h2.title
+         +  hiểu được sự khác nhau giữa ghi liền và ghi có khoảng trắng giữa id hoặc class và tên thẻ. Ví dụ:
+
+            div#main: chọn thẻ div có id="main"
+            div #mian: Chọn thẻ có id="main" nằm trong thẻ div
+
+  * Group Selector: + Thay vì định nghĩa như các thẻ có cùng CSS như thế này
+
+                      h1 {
+                        text-align: center;
+                        color: red;
+                      }
+
+                      h2 {
+                        text-align: center;
+                        color: red;
+                      }
+
+                      p {
+                        text-align: center;
+                        color: red;
+                      }
+
+                      Chúng ta có thể định nghĩa lại bằng group như sau:
+
+                      h1, h2, p {
+                        text-align: center;
+                        color: red;
+                      }
+
+  * CSS Comment: + comment được bỏ qua bởi trình duyệt và thực hiện bằng đoạn mã /* */
