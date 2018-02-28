@@ -8,100 +8,136 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<title>Test Bootstrap</title>
-	<style>
-	.buttonNumber{
-		background-color: #000000;
-		color: white;
-		outline-style: none;
-		border: 3px solid #cccccc;
-		height: 50px;
-		border-radius: 6px;
-		margin-top: 3px;
-	}
+<!-- <script src="./jquery.validate.min.js"></script> --><!--
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
-	.buttonDifferent{
-		background-color: #64605F;
-	}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
 
-	.heightTop{
-		height: 50;
-	}
+<script src="./jquery.validate.min.js"></script>
 
-	.changeLabel{
-		text-align: right;
-		padding-right: 5px;
-		background-color: #eeeeee;
+<title>Test Bootstrap</title>
+<style>
+.buttonNumber{
+	background-color: #000000;
+	color: white;
+	outline-style: none;
+	border: 3px solid #cccccc;
+	height: 50px;
+	border-radius: 6px;
+	margin-top: 3px;
+}
 
-    height: auto;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.buttonDifferent{
+	background-color: #64605F;
+}
 
-	}
+.heightTop{
+	height: 50;
+}
 
-	.containerFather{
-		background-color: #cccccc;
-		padding-left: 18px;
-		padding-right: 18px;
-		padding-top: 3px;
-		padding-bottom: 3px;
-		border-radius: 5px;
-	}
+.changeLabel{
+	text-align: right;
+	padding-right: 5px;
+	background-color: #eeeeee;
 
-	button:hover{
-		background-color: brown;
-	}
+	height: auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 
-	button:active{
-		background-color: blue;
-	}
+}
 
-	.containerText{
-    height: 40px;
-    background: #eeeeee;
-    position: relative;
-    border: 3px solid #cccccc;
-	}
+.containerFather{
+	background-color: #cccccc;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+}
+
+button:hover{
+	background-color: brown;
+}
+
+button:active{
+	background-color: blue;
+}
+
+.containerText{
+	height: 40px;
+	background: #eeeeee;
+	position: relative;
+	border: 3px solid #cccccc;
+}
 
 </style>
+
 </head>
 
 
 <body>
+	<!-- <span id="popuptext" id="myPopup">Popup text...</span> -->
 	<div class="row heightTop"></div>
 	<div class="row">
 		<div class="col-md-4 col-xs-8 col-md-offset-4 col-xs-offset-2 containerFather" >
 			<div class="row containerText">
-				<div class="col-md-12 col-xs-12 changeLabel">abc</div>
+				<div id="text" class="col-md-12 col-xs-12 changeLabel">0</div>
 			</div>
 			<div class="row">
-				<button class="col-md-3 col-xs-6 buttonNumber">1</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">2</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">3</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">0</button>
+				<button id="numberOne" class="col-md-3 col-xs-6 buttonNumber">1</button>
+				<button id="numberTwo" class="col-md-3 col-xs-6 buttonNumber">2</button>
+				<button id="numberThree" class="col-md-3 col-xs-6 buttonNumber">3</button>
+				<button id="numberZero" class="col-md-3 col-xs-6 buttonNumber">0</button>
 			</div>
 			<div class="row">
-				<button class="col-md-3 col-xs-6 buttonNumber">4</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">5</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">6</button>
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">cl</button>
+				<button id="numberFour" class="col-md-3 col-xs-6 buttonNumber">4</button>
+				<button id="numberFive" class="col-md-3 col-xs-6 buttonNumber">5</button>
+				<button id="numberSix" class="col-md-3 col-xs-6 buttonNumber">6</button>
+				<button id="numberCl" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">cl</button>
 			</div>
 			<div class="row">
-				<button class="col-md-3 col-xs-6 buttonNumber">7</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">8</button>
-				<button class="col-md-3 col-xs-6 buttonNumber">9</button>
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">=</button>
+				<button id="numberSeven" class="col-md-3 col-xs-6 buttonNumber">7</button>
+				<button id="numberEight" class="col-md-3 col-xs-6 buttonNumber">8</button>
+				<button id="numberNine" class="col-md-3 col-xs-6 buttonNumber">9</button>
+				<button id="numberTotal" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">=</button>
 			</div>
 			<div class="row">
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">+</button>
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">-</button>
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">x</button>
-				<button class="col-md-3 col-xs-6 buttonNumber buttonDifferent">/</button>
+				<button id="numberPlus" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">+</button>
+				<button id="numberMinus" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">-</button>
+				<button id="numberHuman" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">x</button>
+				<button id="numberDivision" class="col-md-3 col-xs-6 buttonNumber buttonDifferent">/</button>
 			</div>
 		</div>
 	</div>
+	<script>
+		var str2 = "";
+
+		$( "button" ).click(function() {
+			var str1 = $( this ).text();
+			if (str1 != "=" && str1 != "cl"){
+				if (str1 == "x") {
+					str1 = str1.replace("x","*");
+				}
+
+				str2 = str2.concat(str1);
+				$( "#text" ).text(str2);
+			}
+
+			if (str1 == "cl") {
+
+				var popup = document.getElementById("myPopup");
+    		popup.toggle("show");
+			}
+
+			if (str1 == "=") {
+				$("#text").text(eval($("#text").text()));
+				str2 = "";
+			}
+		});
+
+	</script>
 </body>
 </html>

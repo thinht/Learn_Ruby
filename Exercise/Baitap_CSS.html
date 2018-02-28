@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title>Bai Tap Css</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+
+  <!-- <script src="./jquery.validate.min.js"></script>  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .setColumnFirst{
+
+    background-color: rgba(27,30,35,0.9);
+
+  }
+
+  .setColumnLast{
+    background-color: rgba(13,99,107,0.9);
+
+  }
+
+  .setMargin{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .setMarginForm{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+  }
+
+  .header-shadow{
+    background-image: url('./bg.jpg');
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+</head>
+</html>
+<body class="header-shadow">
+
+  <h1 style="text-align: center; color: white;">HOTEL INFO FORM</h1>
+  <div class="row"></div>
+  <br>
+  <div class="row">
+    <div class="col-md-5 col-xs-5 col-md-offset-1 col-xs-offset-1 setColumnFirst">
+      <div class="row">
+        <h2 style="margin-top: 50px" class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1 setMargin">HOTEL</h2>
+        <!-- <br> -->
+      </div>
+      <div class="row">
+        <h4 style="margin-bottom: 42px" class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1 setMargin">It's the Simple Pleasures in Life.</h4>
+      </div>
+      <div class="row">
+        <h6 style="margin-bottom: 40px" class="col-md-9 col-xs-9 col-md-offset-1 col-xs-offset-1 setMargin">Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what is looking for.</h6>
+      </div>
+      <div class="row">
+        <!-- <br> -->
+        <!-- <svg style="color: white; background-color: red;" class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1" viewBox="0 0 8 8"><use xlink:href="#home.svg"></use></svg> -->
+        <!-- <img class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1" src="home.png"> -->
+        <!-- <span style="color: white; background-color: red;" class="col-md-2 col-xs-2 col-md-offset-1 col-xs-offset-1 glyphicon glyphicon-home"></span> -->
+        <h5 class="col-md-3 col-xs-3 col-md-offset-1 col-xs-offset-1 setMargin">Parking Lot</h5>
+
+      </div>
+      <div class="row">
+        <!-- <br> -->
+        <h5 class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1 setMargin">Private Gym with trainer</h5>
+      </div>
+      <div class="row">
+        <!-- <br> -->
+        <h5 class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1 setMargin">Restaurants & Bars</h5>
+      </div>
+      <div class="row">
+        <!-- <br> -->
+        <h5 style="margin-bottom: 50px" class="col-md-6 col-xs-6 col-md-offset-1 col-xs-offset-1 setMargin">Sauna & Spa</h5>
+      </div>
+
+    </div>
+
+    <div class="col-md-5 col-xs-5 setColumnLast">
+      <form>
+        <h2 style="text-align: center; margin-top: 30px; color: white">PERSONAL INFO</h2>
+        <div class="row">
+          <input style="margin-top: 20px;" class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm" type="text" name="firstName" placeholder="First Name">
+        </div>
+        <div class="row">
+          <input class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm" type="text" name="lastName" placeholder="Last Name">
+        </div>
+        <div class="row">
+          <input class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm" type="text" name="firstName" placeholder="E-mail">
+        </div>
+        <div class="row">
+          <input class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm" type="text" name="lastName" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="row">
+          <select style="background-color: white" class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm">
+            <option>Gender</option>
+          </select>
+        </div>
+        <div class="row">
+          <select style="background-color: white" class="col-md-offset-1 col-xs-offset-1 col-md-10 col-xs-10 setMarginForm">
+            <option>Select Cities</option>
+          </select>
+        </div>
+        <div class="row">
+          <button style="background-color: white" type="submit" class="col-md-offset-4 col-xs-offset-4 col-md-4 col-xs-4 setMarginForm ">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <div class="row"></div>
+
+    <h6 style="text-align: center; margin-top: 50px; color: white">@ 2017 Hotel Info Form. All rights reserved I Design by W3layouts</h6>
+    <div class="row"></div>
+    <div class="row"></div>
+  </div>
+
+</body>

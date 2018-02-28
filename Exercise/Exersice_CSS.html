@@ -1,12 +1,59 @@
-<!DOCTYPE  html>
-<!-- saved from url=(0040)file:///Users/tranthinh/Desktop/cba.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
 	<title>Page abc</title>
-	<link rel="stylesheet" type="text/css" href="./Page abc_files/theme.css">
+	<link rel="stylesheet" type="text/css" href="theme.css"/>
 	<style>
 	#para1 {
 		text-align: center;
 		color: red;
+	}
+
+	#a1{
+		color: gray;
+		background-color: blue;
+	}
+
+	#b1{
+		color: pink;
+		background-color: blue;
+	}
+
+	.a{
+		color: blue ;
+		background-color: red;
+	}
+
+	.a2{
+		color: red;
+		background-color: purple;
+	}
+
+	#b1.b{
+		color: green;
+		background-color: yellow;
+	}
+
+
+/*
+	p#a3{
+		color: blue;
+	}
+
+	p#a3{
+		color: yellow;
+	}
+
+	p.a3 {
+		color: blue;
+	}
+
+	p {
+		color: green;
+	}*/
+
+	p:first-child{
+		background-color: red;
 	}
 </style>
 </head>
@@ -23,13 +70,39 @@
 			<h6>6</h6>
 		</div>
 	</header>
-	<p id="para1">Hello World!</p>
-	<p id="para1" style="color: blue" title="John &quot;ShotGun&quot; Nelson">text hover 1</p>
-	<p title="John &#39;ShotGun&#39; and&#39;ShotGun&#39; Nelson">text hover 2</p>
 
-	<form action="file:///action_page.php" method="post">
+<div>
+	<!-- <span>Title</span> -->
+	<p id="else1">12345</p>
+	<p id="else5">11111</p>
+</div>
+<div>
+	<p id="else2">23456</p>
+	<p id="else3">234567</p>
+</div>
+<p id="else4">2345678</p>
+
+	<p id="a1" class="a a2" style=>text a</p>
+	<p id="b1" class="a b">text b</p>
+	<p id="a3" class="a3">text c</p>
+	<br>
+	<p id="para1" class='acv'>Hello World!</p>
+	<p id="para1" class='acv' title='John "ShotGun" Nelson'>text hover 1</p>
+	<p style="text-transform:capitalize; padding-left: 10px" title="John 'ShotGun' and'ShotGun' Nelson">text hover 2</p>
+
+	<form action="/action_page.php" method="post">
 		First name: <input type="text" name="fname"><br>
 		Last name: <input type="text" name="lname"><br>
+		abc: <input type="checkbox"><br>
+		<select>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+		</select><br>
+		<textarea rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea><br>
 		<input type="submit" value="Submit">
 	</form>
 	<ol>
@@ -54,7 +127,7 @@
 		<li>Milk6</li>
 	</ul>
 	<table style="width:100%">
-		<tbody><tr>
+		<tr>
 			<th>Firstname</th>
 			<th>Lastname</th>
 			<th>Age</th>
@@ -69,12 +142,14 @@
 			<td>Jackson</td>
 			<td>94</td>
 		</tr>
-	</tbody></table>
+	</table>
 	<div style="color:green">
 		<h1>My First Heading</h1><hr>
 		<p>My first<br> paragraph.</p>
 		<p>My mother has <span style="color:blue">blue</span> eyes.</p>
 	</div>
-
-
-</body></html>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = "Hello javascript"
+	</script>
+</body>
+</html>

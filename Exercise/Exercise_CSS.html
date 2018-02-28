@@ -1,6 +1,308 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-}
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>Exercise CSS HTML</title>
+  <style>
+
+  .containerLeft{
+    width: 50%;
+    /*background-color: blue;*/
+    float: left;
+  }
+
+  .containerRight{
+    width: 50%;
+    background-color: yellow;
+    float: right;
+  }
+
+  .sizeViewContainer{
+    width: 50%;
+    height: 90%;
+  }
+
+  p {
+    background-color: green;
+    color: yellow;
+  }
+
+  input[type=file] {
+    display: inline-block;
+  }
+
+  .right-floating{
+    float: right;
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+
+
+<body>
+  <div align="center">
+    <div style="background-color: white; height: 90%;" class="containerLeft">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>abc1</th>
+            <th>abc2</th>
+            <th>abc3</th>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>345</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>Peter</td>
+          </tr>
+          <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+          </tr>
+          <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+          </tr>
+        </table>
+      </div>
+      <p>HOTEL</p>
+      <br>
+      <p>It's the Simple Pleasures in Life</p>
+      <br>
+      <br>
+      <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what is looking for.</p>
+      <br>
+      <p>Parking Lot</p>
+      <br>
+      <p>Private Gym with trainer</p>
+      <br>
+      <p>Restaurants & Bars</p>
+      <br>
+      <p>Sauna & Spa</p>
+    </div>
+  </div>
+  <div style="background-color: white; height: 90%;" class="containerRight">
+    <!-- <div class="pull-left right-floating">abc</div><br>
+    <span class="text-danger center-block">67890</span>
+    <div class="bg-danger center-block hidden-xs">tyuiop</div>
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span aria-hidden="true">Here be redundant or extraneous content</span>
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+        <!--  <form>
+          <input type="text" name="firstname" value="" placeholder="FirstName"><br>
+          <input type="text" name="firstname" value="" placeholder="LastName"><br>
+          <input type="text" name="firstname" value="" placeholder="E-Mail"><br>
+          <input type="text" name="firstname" value="" placeholder="mm/dd/yy"><br>
+          <input type="text" name="firstname" value="" placeholder="Email"><br>
+          <select>
+            <option value="gender">Gender</option>
+          </select>
+          <select>
+            <option value="citi">Select Cities</option>
+          </select>
+
+          <input type="submit" value="Submit">
+        </form>  -->
+        <!-- <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="checkbox disabled">
+            <label>
+              <input type="checkbox" value="" disabled>
+              Option two is disabled
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Option one is this and that&mdash;be sure to include why it's great
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+              abc
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+              Option three is disabled
+            </label>
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+          </label>
+
+          <input class="form-control input-lg" type="text" placeholder=".input-lg">
+          <input class="form-control" type="text" placeholder="Default input">
+          <input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+          <select class="form-control input-lg">...</select>
+          <select class="form-control">...</select>
+          <select class="form-control input-sm">...</select>
+        </form> -->
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Sign in</button>
+
+          <div class="form-group has-success">
+            <label class="control-label" for="inputSuccess1">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+            <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </div>
+          <div class="form-group has-warning">
+            <label class="control-label" for="inputWarning1">Input with warning</label>
+            <input type="text" class="form-control" id="inputWarning1">
+          </div>
+          <div class="form-group has-error">
+            <label class="control-label" for="inputError1">Input with error</label>
+            <input type="text" class="form-control" id="inputError1">
+          </div>
+          <div class="has-success">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxSuccess" value="option1">
+                Checkbox with success
+              </label>
+            </div>
+          </div>
+          <div class="has-warning">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxWarning" value="option1">
+                Checkbox with warning
+              </label>
+            </div>
+          </div>
+          <div class="has-error">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxError" value="option1">
+                Checkbox with error
+              </label>
+            </div>
+          </div>
+          <a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-default" type="submit">Button</button>
+<input class="btn btn-default" type="button" value="Input">
+<input class="btn btn-default" type="submit" value="Submit">
+</form>
+
+</div>
+</div>
+</body>
