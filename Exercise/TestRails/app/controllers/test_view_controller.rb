@@ -1,0 +1,2 @@
+class TestViewController < ApplicationController
+end
