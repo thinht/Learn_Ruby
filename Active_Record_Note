@@ -1,0 +1,6 @@
+- Là M(modal) trong MVC. Là lớp của hệ thống chịu trách nhiệm cho dữ liệu và logic. Tạo đk cho việc tạo và sử dụng các đối tượng có dữ liệu cần lưu trữ liên tục vào CSDL.
+- Object Relational Mapping viết tắt ORM kết nối các đối tượng trong ứng dụng vào các bản trong hệ thống quan hệ CSDL. Thuộc tính và các mối quan hệ có thể dễ dàng lưu trữ và lấy ra mà không cần viết câu lệnh SQL trực tiếp.
+- Quy ước về cấu hình Active Recode
+ + Modal/Class : Article, LineItem, Deer, Mouse, Person.
+ + Table/Scheme : articles, line_items, deers, mice, people.
+ + Column/Table : singularized_table_name_id, item_id, order_id.

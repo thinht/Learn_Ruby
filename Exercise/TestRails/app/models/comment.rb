@@ -3,4 +3,5 @@ class Comment < ApplicationRecord
 
   validates :commenter, presence: true
   validates :body, length: {maximum:2}
+  vatidates
 end
