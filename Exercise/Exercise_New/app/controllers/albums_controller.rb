@@ -16,32 +16,30 @@ class AlbumsController < ApplicationController
   end
 
   def create
-    @album = Album.new(album_params)
-    if @album.save
-      redirect_to @album
-    else
-      render 'new'
-    end
+
+    @user = User.find(params[:user_id])
+    @album = @user.albums.create(album_params)
+    redirect_to user_path(@user)
   end
 
   def destroy
-    @album = Album.find(params[:id])
-    @album.destroy
 
-    direct_to albums_path
+    @user = User.find(params[:user_id])
+    @album = @user.albums.find(params[:id])
+    @album.destroy
+    redirect_to user_path(@user)
   end
 
   def update
-    @album = Album.find(params[:id])
-    if album.update(album_params)
-      direct_to @album
-    else
-      render 'edit'
-    end
+    @user = User.find(params[:user_id])
+    @album = @user.albums.find(params[:id])
+    @album.update
+    redirect_to user_path(@user)
   end
 
   private
     def album_params
       params.require(:album).permit(:title,:desc,:is_public)
     end
+
 end
