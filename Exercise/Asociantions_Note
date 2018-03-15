@@ -1,0 +1,91 @@
+** Rails association not follow convention
+--------------------------------------
+
+1. not follow convention
+
+class Node < ApplicationRecord
+  has_many :children, class_name: "Node", foreign_key: :parent_id
+  belongs_to :parent, class_name: "Node"
+end
+
+table: nodes (id | parent_id)
+
+
+**********
+
+n = Node.find(6)
+
+class Node < ApplicationRecord
+  # has_many :children, class_name: "Node", foreign_key: :parent_id
+  belongs_to :parent, class_name: "Node"
+end
+
+n.parent_id #==> 11
+n.parent #==> Node id = 11
+select *
+from nodes #==> class_name: "Node"
+where id = 11(n.parent_id)
+
+**********
+
+class Node < ApplicationRecord
+  has_many :children, class_name: "Node", foreign_key: :parent_id
+  # belongs_to :parent, class_name: "Node"
+end
+
+n = Node.find(6)
+
+n.children #==> [Node id = 4, Node id = 8]
+select *
+from nodes #==> class_name: "Node"
+where parent_id = 6 #==> foreign_key: :parent_id
+
+2. follow convention
+
+class Node < ApplicationRecord
+  has_many :children
+  belongs_to :parent
+end
+
+n = Node.find(1)
+n.children
+
+select *
+from children
+where node_id = 1
+
+n.parent
+n.parent_id #==> 3
+
+select *
+from parents
+where id = 3(n.parent_id)
+
+
+
+** Rails association convention
+--------------------------------------
+
+class User < ApplicationRecord
+  has_many :pictures
+end
+
+u = User.find(1)
+u.pictures
+
+select *
+from pictures     #==> from table pictures because: association name has_many :pictures
+where user_id = 1 #==> use user_id because: class named User
+
+
+class Picture < ApplicationRecord
+  belongs_to :user
+end
+
+p = Picture.find(1)
+p.user_id #==> user_id = 2
+p.user
+
+select *
+from users                          #==> from table users because: association name belongs_to :user
+where id = 2(get from p.user_id)    #==> get from p.user_id beause: association name belongs_to :user
