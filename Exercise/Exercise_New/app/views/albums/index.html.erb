@@ -22,7 +22,7 @@
             <%= link_to 'show', album_pictures_path(album) %>
           </div>
           <div class="col-md-2 col-xs-2 setMargin">
-            <p>delete</p>
+            <%= link_to 'Delete', album_path(album), data: {confirm: 'Are you sure?'}, method: :delete %>
           </div>
         </div>
       </div>

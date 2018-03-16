@@ -17,24 +17,24 @@ class AlbumsController < ApplicationController
 
   def create
 
-    @user = User.find(params[:user_id])
-    @album = @user.albums.create(album_params)
-    redirect_to user_path(@user)
+    # @user = User.find(params[:user_id])
+    @album = current_user.albums.create(album_params)
+    redirect_to albums_path
   end
 
   def destroy
 
-    @user = User.find(params[:user_id])
-    @album = @user.albums.find(params[:id])
+    # @user = User.find(params[:user_id])
+    @album = Album.find(params[:id])
     @album.destroy
-    redirect_to user_path(@user)
+    redirect_to  albums_path
   end
 
   def update
-    @user = User.find(params[:user_id])
-    @album = @user.albums.find(params[:id])
-    @album.update
-    redirect_to user_path(@user)
+    # @user = User.find(params[:user_id])
+    @album = Album.find(params[:id])
+    @album.update(album_params)
+    redirect_to albums_path
   end
 
   private

@@ -19,7 +19,7 @@
             <%= link_to 'edit', edit_album_picture_path(picture.album,picture) %>
           </div>
           <div class="col-md-2 col-xs-2 setMargin">
-            <%= link_to 'delete', album_picture_path(picture.album,picture) %>
+            <%= link_to 'delete', album_picture_path(picture.album,picture), data: {confirm: 'Are you sure?'}, method: :delete %>
           </div>
         </div>
       </div>
