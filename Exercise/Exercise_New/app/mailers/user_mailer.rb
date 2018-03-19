@@ -3,6 +3,12 @@ class UserMailer < ApplicationMailer
   def welcome_email
     # @user = user
     @url = 'http://example.com/login'
-    mail(to: "aa@gmail.com", subject: 'welcome to My Awesome Site')
+    # attachments['image_email.jpg'] = File.read(Rails.root.join('app', 'assets', 'images', 'image_email.jpg'))
+    attachments.inline['image_email.jpg'] = File.read(Rails.root.join('app', 'assets', 'images', 'image_email.jpg'))
+
+    mail(to: "aa@gmail.com", subject: 'welcome to My Awesome Site') do |format|
+      format.text { render plain: 'Render text' }
+    end
   end
 end
+

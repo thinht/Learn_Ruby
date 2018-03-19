@@ -13,7 +13,7 @@
           <%= link_to 'edit', edit_user_path(user) %>
         </div>
         <div class="col-md-2 col-xs-2 setMargin">
-          <%= link_to 'show', user_path(user) %>
+          <%= link_to 'show album', user_albums_path(user) %>
         </div>
         <div class="col-md-2 col-xs-2 setMargin">
           <%= link_to 'Delete', user_path(user), data: {confirm: 'Are you sure?'}, method: :delete %>

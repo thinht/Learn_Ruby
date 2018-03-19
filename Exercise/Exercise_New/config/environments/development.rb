@@ -31,7 +31,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  # Print deprecation notices to the Rails logger.
+  config.action_mailer.asset_host = 'http://localhost:3000'
+
+  # Print deparecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
