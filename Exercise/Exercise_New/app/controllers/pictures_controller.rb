@@ -42,12 +42,6 @@ class PicturesController < ApplicationController
     redirect_to album_pictures_path(@album)
   end
 
-  def picture_private
-    # @@album = Album.find params[:album_id]
-    # @album.pictures.where
-    @pictures = Picture.where(is_public: false)
-  end
-
   private
   def picture_params
     params.require(:picture).permit(:title,:desc,:is_public)

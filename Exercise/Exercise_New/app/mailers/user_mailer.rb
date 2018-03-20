@@ -10,5 +10,10 @@ class UserMailer < ApplicationMailer
       format.text { render plain: 'Render text' }
     end
   end
+
+  def notify_create_store_email
+    subject = "notify_create_store_subject"
+    mail(to: "thinh@gmail.com", subject: subject)
+  end
 end
 
