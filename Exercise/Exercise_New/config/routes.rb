@@ -10,10 +10,13 @@ Rails.application.routes.draw do
 
   # shallow do
   resources :users, shallow: true do
+    get 'dashboard', on: :member
     resources :albums do
       resources :pictures
     end
   end
+
+  resources :pictures
 
   # end
 

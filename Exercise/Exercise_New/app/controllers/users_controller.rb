@@ -18,6 +18,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def dashboard
+    @pictures = current_user.pictures
+  end
+
   def index
     @users = User.all#find params[:id]
   end

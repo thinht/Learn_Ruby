@@ -28,7 +28,7 @@ class AlbumsController < ApplicationController
     @album = Album.find(params[:id])
     @user = @album.user
     @album.destroy
-    redirect_to  user_albums_path(@user)
+    redirect_to user_albums_path(@user)
   end
 
   def update
