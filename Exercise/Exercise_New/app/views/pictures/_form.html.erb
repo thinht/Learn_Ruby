@@ -1,14 +1,9 @@
 <div>
-  <div class="row">
-    <div class="col-md-4 col-xs-4 col-md-offset-4 col-xs-offset-4">
-      <img src="">
-    </div>
-  </div>
 
   <div class="row">
     <div>
       <%= form_for picture, url: url_link do |form| %>
-
+      <%= form.file_field :image %>
       <p>
         <%= form.label :title %><br>
         <%= form.text_field :title %>

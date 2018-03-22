@@ -3,7 +3,7 @@
     <% @pictures.each do |picture| %>
     <div class="col-md-3 col-xs-3 bgDivTest">
 
-      <img>
+      <%= image_tag picture.image.url %>
       <div class="row">
         <div class="sizeText">
           <%= picture.title %>
