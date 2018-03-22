@@ -4,9 +4,9 @@ class PicturesController < ApplicationController
     # @user = User.find params[:user_id]
     # @album = @user.
     if params[:album_id] &&  @album = Album.find(params[:album_id])
-      @pictures = @album.pictures.all
+      @pictures = @album.pictures.page(params[:page]).per(1)
     else
-      @pictures = Picture.all
+      @pictures = Picture.page(params[:page]).per(1)
     end
   end
 

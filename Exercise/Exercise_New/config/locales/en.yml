@@ -30,11 +30,63 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  user:
-    login: 'Login'
-    sign_out: 'Sign Out'
-    sign_up: 'Sign Up'
-    list_user: 'List User'
-    edit: 'Edit'
+  albums:
+    form:
+      title: Title Album
+      desc: Description
+      public: Public
 
+    edit:
+      title_edit_album: Edit Album
+
+    index:
+      edit: Edit
+      show: Show
+      delete: Delete
+      str_delete: Are you sure?
+      new_album: New Album
+      pictures_private: Pictures Private
+      pictures_public: Pictures Public
+
+    new:
+      title_create_album: Create Album
+
+  home:
+    index:
+      list_user: List User
+      current_user: Current User
+      sign_out: Sign Out
+      sign_in: Sign In
+      sign_up: Sign Up
+
+  notifications:
+    another:
+      title_welcome: Welcome to example.com
+
+  pictures:
+    edit:
+      title_edit_picture: Edit Picture
+
+    index:
+      new_picture: New Picture
+      str_delete: Are you sure?
+
+    new:
+      title_create_picture: Create Picture
+
+  users:
+    dashboard:
+      str_delete: Are you sure?
+    index:
+      str_delete: Are you sure?
+    show:
+      str_delete: Are you sure?
+
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
 
