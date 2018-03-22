@@ -3,7 +3,9 @@
     <% @albums.each do |album| %>
     <div class="col-md-3 col-xs-3 bgDivTest">
 
-      <img>
+      <%= image_tag album.image.url %>
+<%= image_tag album.image.url(:medium) %>
+<%= image_tag album.image.url(:thumb) %>
       <div class="row">
         <div class="sizeText">
           <%= album.title %>
@@ -49,6 +51,9 @@
       <%= link_to 'Picture publish', pictures_path %>
     </div>
 
+  </div>
+  <div>
+    <%= paginate @users %>
   </div>
 
 </div>

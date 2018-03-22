@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
    # POST /users
   # POST /users.json
+  # paginates_per 2
+
   def create
     @user = User.new(params[:user])
 
@@ -23,7 +25,12 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all#find params[:id]
+    # @users = User.all#find params[:id]
+    @users = User.page(params[:page]).per(1)
+  end
+
+  def show
+    @user = User.find params[:id]
   end
 
   def edit

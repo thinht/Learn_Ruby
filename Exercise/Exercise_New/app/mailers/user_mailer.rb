@@ -11,9 +11,10 @@ class UserMailer < ApplicationMailer
     end
   end
 
-  def notify_create_store_email
+  def notify_create_store_email(user)
+    @user = user
     subject = "notify_create_store_subject"
-    mail(to: "thinh@gmail.com", subject: subject)
+    mail(to: @user.email, subject: subject)
   end
 end
 

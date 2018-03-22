@@ -57,4 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
 end
 gem 'delayed_job_active_record'
-gem "daemons"
+gem 'daemons'
+gem 'devise'
+gem "paperclip", "~> 6.0.0"
+gem 'kaminari'
+gem 'i18n-js'
